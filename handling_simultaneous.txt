@@ -1,0 +1,3 @@
+I was able to handle simultaneous clients by using the included "threading" package. 
+For every 2 clients that connected, I would create a new "game" object with its own thread (as seen in the serve_game function).
+I would then make each thread run the play_game function to completion, taking the "game" object as an argument.
